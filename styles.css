@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue-color: hsl(246, 80%, 60%);
+    --work-color: hsl(15, 100%, 70%);
+    --play-color: hsl(195, 74%, 62%);
+    --study-color: hsl(348, 100%, 68%);
+    --exercise-color: hsl(145, 58%, 55%);
+    --social-color: hsl(264, 64%, 52%);
+    --self-care-color: hsl(43, 84%, 65%);
+    --very-dark-blue-color: hsl(226, 43%, 10%);
+    --dark-blue-color: hsl(235, 46%, 20%);
+    --desaturated-blue-color: hsl(235, 45%, 61%);
+    --pale-blue-color: hsl(236, 100%, 87%);
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-dark-blue-color);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1150px;
+}
+
+#userSection {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    position: relative;
+}
+
+#playContainer,
+#workContainer,
+#studyContainer {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 100%;
+}
+
+#exerciseContainer,
+#socialContainer,
+#selfCareContainer {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+.user-top-container {
+    background-color: var(--dark-blue-color);
+    border-radius: 17px;
+    height: 100%;
+}
+
+.user-top {
+    background-color: var(--blue-color);
+    padding: 14% 12%;
+    border-radius: 17px;
+}
+
+.user-top img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.report-for {
+    color: var(--pale-blue-color);
+    font-size: 17px;
+}
+
+h1 {
+    color: white;
+    font-weight: 300;
+    margin-bottom: 40px;
+    font-size: 45px;
+    margin-top: 5px;
+}
+
+.user-selector {
+    background-color: var(--dark-blue-color);
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+    padding-top: 30px;
+    color: var(--desaturated-blue-color);
+    position: relative;
+    width: 100%;
+    border-radius: 17px;
+}
+
+.user-selector span {
+    margin-bottom: 24px;
+    font-size: 20px;
+    width: fit-content;
+}
+
+.user-selector span:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#workContainer {
+    height: fit-content;
+    padding-top: 16%;
+}
+
+#imgWorkContainer {
+    background-color: var(--work-color);
+}
+
+.stats-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 17px;
+}
+
+.stats-container-info {
+    background-color: var(--dark-blue-color);
+    position: relative;
+    top: 10%;
+    border-radius: 17px;
+    padding: 13%;
+    height: fit-content;
+    padding-bottom: 15%;
+}
+
+.stats-container-info:hover {
+    background-color: hsl(235, 42%, 34%);
+    cursor: pointer;
+}
+
+.img-container {
+    width: 99%;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5%;
+    border-radius: 17px;
+}
+
+.img-container img {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+.stats-header {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    cursor: text;
+    width: fit-content;
+}
+
+.header-stats-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dots {
+    display: flex;
+    align-self: center;
+    cursor: pointer;
+}
+
+.dots:hover .dot {
+    background-color: hsl(236, 19%, 58%);
+}
+
+
+.dot {
+    background-color: var(--pale-blue-color);
+    width: 5px;
+    margin-left: 3px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.stats-current-time {
+    display: block;
+    font-size: 60px;
+    margin-top: 30px;
+    color: white;
+    font-weight: 300;
+    cursor: text;
+    width: fit-content;
+}
+
+.stats-previous-time {
+    font-size: 15px;
+    display: block;
+    color: var(--pale-blue-color);
+    margin-top: 10px;
+    font-weight: 400;
+    cursor: text;
+    width: fit-content;
+}
+
+#playContainer {
+    height: fit-content;
+    padding-top: 16%;
+}
+
+#imgPlayContainer {
+    background-color: var(--play-color);
+}
+
+#studyContainer {
+    height: fit-content;
+    padding-top: 16%;
+}
+
+#imgStudyContainer {
+    background-color: var(--study-color);
+}
+
+#exerciseContainer {
+    height: fit-content;
+    padding-top: 16%;
+}
+
+#imgExerciseContainer {
+    background-color: var(--exercise-color);
+}
+
+#socialContainer {
+    height: fit-content;
+    padding-top: 16%;
+}
+
+#imgSocialContainer {
+    background-color: var(--social-color);
+}
+
+#selfCareContainer {
+    height: fit-content;
+    padding-top: 16%;
+}
+
+#imgSelfCareContainer {
+    background-color: var(--self-care-color);
+}
+
+#exerciseImg {
+    top: 10px;
+}
+
+.clicked {
+    color: white;
+}
+
+
+@media (max-width: 500px) {
+    .container { 
+        grid-template-columns: 1fr;
+        gap: 30px;
+        width: 100%;
+    }
+
+    body {
+        height: fit-content;
+        padding: 50px 20px;
+    }
+
+    .user-selector {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .user-selector span {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #userSection {
+        grid-row-start: auto;
+        grid-row-end: auto;
+        position: relative;
+    }
+    
+    #playContainer,
+    #workContainer,
+    #studyContainer {
+        grid-row-start: auto;
+        grid-row-end: auto;
+    }
+    
+    #exerciseContainer,
+    #socialContainer,
+    #selfCareContainer {
+        grid-row-start: auto;
+        grid-row-end: auto;
+    }
+
+    .user-top img {
+        display: inline;
+        margin-bottom: 0px;
+        height: 80px;
+        width: 80px;
+    }
+
+    .user-top {
+        display: flex;
+        background-color: var(--blue-color);
+        padding: 12% 8%;
+        padding-bottom: 10px;
+        border-radius: 17px;
+    }
+
+    .user-mobile-view {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        align-self: center;
+        margin-top: 10px;
+    }
+
+    h1 {
+        white-space: nowrap;
+        font-size: 25px;
+    }
+
+    .report-for {
+        white-space: nowrap;
+    }
+
+    .stats-current-time,
+    .stats-previous-time {
+        display: inline;
+        height: fit-content;
+    }
+
+    .stats-current-time {
+        font-size: 50px;
+    }
+
+    .stats-container-info {
+        padding: 8%;
+    }
+
+    .mobile-stats-view {
+        display: flex;
+        height: fit-content;
+        justify-content: space-between;
+    }
+
+    .stats-previous-time {
+        margin-top: 50px;
+    }
+
+    #exerciseImg {
+        top: 15px;
+    }
+
+    #selfCareImg {
+        top: 10px;
+    }
+}
