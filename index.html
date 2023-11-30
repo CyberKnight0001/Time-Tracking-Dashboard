@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+<div class="container">
+  <div id="userSection">
+    <div class="user-top-container">
+    <div class="user-top">
+      <img id="userImg" src="images/goku.png" alt="">
+      <div class="user-mobile-view">
+        <span class="report-for">Report for</span>
+        <h1>Ujjawal Pandey</h1>
+      </div>
+    </div>
+      <div class="user-selector">
+        <span id="daily">Daily</span>
+        <span class="clicked" id="weekly">Weekly</span>
+        <span id="monthly">Monthly</span>
+      </div>
+    
+  </div>
+  </div>
+
+  <div id="workContainer" class="stats-container">
+    <div class="borders-div"></div>
+    <div id="imgWorkContainer" class="img-container">
+      <img src="images/icon-work.svg" alt="" id="workImg">
+    </div>
+    <div class="stats-container-info">
+      <div class="header-stats-div">
+        <span id="workHeader" class="stats-header">Work</span>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+      <div class="mobile-stats-view">
+        <span id="workCurrentTime" class="stats-current-time">32hrs</span> <!-- daily -->
+        <span class="stats-previous-time"><span id="workPrevious">Last Week - 0hrs</span></span> <!-- daily -->
+      </div>
+  </div>
+  </div>
+
+  <div id="playContainer" class="stats-container">
+    <div class="borders-div"></div>
+    <div id="imgPlayContainer" class="img-container">
+      <img src="images/icon-play.svg" alt="" id="playImg">
+    </div>
+    <div class="stats-container-info">
+      <div class="header-stats-div">
+        <span id="playHeader" class="stats-header">Play</span>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+      <div class="mobile-stats-view">
+        <span id="playCurrentTime" class="stats-current-time">10hrs</span> <!-- daily -->
+        <span class="stats-previous-time"><span id="playPrevious">Last week - 0hrs</span></span> <!-- daily -->
+      </div>
+    </div>
+  </div>
+
+  <div id="studyContainer" class="stats-container">
+    <div class="borders-div"></div>
+    <div id="imgStudyContainer" class="img-container">
+      <img src="images/icon-study.svg" alt="" id="studyImg">
+    </div>
+    <div class="stats-container-info">
+      <div class="header-stats-div">
+        <span id="studyHeader" class="stats-header">Study</span>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+      <div class="mobile-stats-view">
+        <span id="studyCurrentTime" class="stats-current-time">12hrs</span> <!-- daily -->
+        <span class="stats-previous-time"><span id="studyPrevious">Last Week - 0hrs</span></span> <!-- daily -->
+      </div>
+    </div>
+  </div>
+
+  <div id="exerciseContainer" class="stats-container">
+    <div class="borders-div"></div>
+    <div id="imgExerciseContainer" class="img-container">
+      <img src="images/icon-exercise.svg" alt="" id="exerciseImg">
+    </div>
+    <div class="stats-container-info">
+      <div class="header-stats-div">
+        <span id="exerciseHeader" class="stats-header">Exercise</span>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+      <div class="mobile-stats-view">
+        <span id="exerciseCurrentTime" class="stats-current-time">4hrs</span> <!-- daily -->
+        <span class="stats-previous-time"><span id="exercisePrevious">Last Week - 0hrs</span></span> <!-- daily -->
+      </div>
+    </div>
+  </div>
+
+  <div id="socialContainer" class="stats-container">
+    <div class="borders-div"></div>
+    <div id="imgSocialContainer" class="img-container">
+      <img src="images/icon-social.svg" alt="" id="socialImg">
+    </div>
+    <div class="stats-container-info">
+      <div class="header-stats-div">
+        <span id="socialHeader" class="stats-header">Social</span>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+      <div class="mobile-stats-view">
+        <span id="socialCurrentTime" class="stats-current-time">5hrs</span> <!-- daily -->
+        <span class="stats-previous-time"><span id="socialPrevious">Last Week - 0hrs</span></span> <!-- daily -->
+      </div>
+    </div>
+  </div>
+
+  <div id="selfCareContainer" class="stats-container">
+    <div class="borders-div"></div>
+    <div id="imgSelfCareContainer" class="img-container">
+      <img src="images/icon-self-care.svg" alt="" id="selfCareImg">
+    </div>
+    <div class="stats-container-info">
+      <div class="header-stats-div">
+        <span id="selfCareHeader" class="stats-header">Self Care</span>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+      <div class="mobile-stats-view">
+        <span id="selfCareCurrentTime" class="stats-current-time">2hrs</span> <!-- daily -->
+        <span class="stats-previous-time"><span id="selfCarePrevious">Last Week - 0hrs</span></span> <!-- daily -->
+      </div>
+    </div>
+  </div>
+</div>
+  
+ <script src="app.js"></script>
+</body>
+</html>
